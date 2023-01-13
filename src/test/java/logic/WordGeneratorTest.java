@@ -7,6 +7,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class WordGeneratorTest {
 
     @Test
-    void pickRandomWord() {
+    void checkSizeOfWord() {
+        String expected = "tests";
+        assertEquals(expected.length(), WordGenerator.pickRandomWord().length());
+    }
+
+    @Test
+    void checkIfWordIsString() {
+
     }
 }
