@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4250a16-ad27-4df7-823f-d5140031ef37" name="Changes" comment="POM Updated und TESTS hinzugefügt">
+    <list default="true" id="a4250a16-ad27-4df7-823f-d5140031ef37" name="Changes" comment="Klasse CompareInputWithWord hinzugefügt. Weitere Klassen angepasst. Maven aktualisiert">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/logic/CompareInputWithWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/WordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/WordGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/logic/WordGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/WordGeneratorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673855303929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Klasse CompareInputWithWord hinzugefügt. Weitere Klassen angepasst. Maven aktualisiert">
+      <created>1673858348460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673858348460</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,7 +167,8 @@
     <MESSAGE value="Struktur geändert. Klassen hinzugefügt. Test Klassen hinzugefügt" />
     <MESSAGE value="Test hinzugefügt welcher die Länge des zurückgegebenen Strings prüft" />
     <MESSAGE value="POM Updated und TESTS hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="POM Updated und TESTS hinzugefügt" />
+    <MESSAGE value="Klasse CompareInputWithWord hinzugefügt. Weitere Klassen angepasst. Maven aktualisiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klasse CompareInputWithWord hinzugefügt. Weitere Klassen angepasst. Maven aktualisiert" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
