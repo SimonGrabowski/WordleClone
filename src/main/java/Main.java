@@ -10,12 +10,13 @@ public class Main {
 
     public static void main(String[] args) {
         String generatedWord = generateWord();
+        System.out.println(generatedWord);
         Scanner scanner = new Scanner(System.in);
         String userInput;
         do {
             userInput = scanner.nextLine();
         } while (checkIfInputInvalid(userInput));
-
+        System.out.println(compareInputWithSolution(userInput, generatedWord));
     }
 
     private static String generateWord() {
@@ -36,7 +37,15 @@ public class Main {
         return false;
     }
 
-    private static void compareInputWithSolution() {
-
+    private static String compareInputWithSolution(String userInput, String generatedWord) {
+        StringBuilder tempWord = new StringBuilder();
+        for (int i = 0; i < generatedWord.length(); i++) {
+            if (userInput.charAt(i) == generatedWord.charAt(i)) {
+                tempWord.append(userInput.charAt(i)).append(" ");
+            } else {
+                tempWord.append("❒ ");
+            }
+        }
+        return tempWord.toString();
     }
 }
