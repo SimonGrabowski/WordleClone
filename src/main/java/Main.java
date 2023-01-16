@@ -1,12 +1,11 @@
-import java.util.Random;
-import java.util.Scanner;
-
-import static logic.WordGenerator.pickRandomWord;
+import logic.CompareInputWithWord;
+import logic.UserInput;
+import logic.WordGenerator;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        CompareInputWithWord.compareInputWithWord(UserInput.userInput(), WordGenerator.pickRandomWord());
     }
 
 }

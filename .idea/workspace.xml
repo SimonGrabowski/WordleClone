@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4250a16-ad27-4df7-823f-d5140031ef37" name="Changes" comment="Test hinzugefügt welcher die Länge des zurückgegebenen Strings prüft">
+    <list default="true" id="a4250a16-ad27-4df7-823f-d5140031ef37" name="Changes" comment="POM Updated und TESTS hinzugefügt">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/CompareInputWithWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/UserInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/logic/WordGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/WordGeneratorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,14 +46,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "/home/simon/Documents/Projects/intellijProjects/WordleClone",
-    "settings.editor.selected.configurable": "terminal"
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="logic" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -57,12 +66,19 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WordGeneratorTest.checkIfWordIsString">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="WordleClone" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordGeneratorTest.checkIfWordIsString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WordleClone" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="logic.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,7 +94,7 @@
       <module name="WordleClone" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="logic.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.WordGeneratorTest.checkIfWordIsString" />
         <item itemvalue="JUnit.WordGeneratorTest.checkSizeOfWord" />
       </list>
@@ -127,14 +144,22 @@
       <option name="project" value="LOCAL" />
       <updated>1673606931380</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="POM Updated und TESTS hinzugefügt">
+      <created>1673855303929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673855303929</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main Klasse hinzugefügt" />
     <MESSAGE value="Struktur geändert. Klassen hinzugefügt. Test Klassen hinzugefügt" />
     <MESSAGE value="Test hinzugefügt welcher die Länge des zurückgegebenen Strings prüft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test hinzugefügt welcher die Länge des zurückgegebenen Strings prüft" />
+    <MESSAGE value="POM Updated und TESTS hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="POM Updated und TESTS hinzugefügt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
