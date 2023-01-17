@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -18,6 +19,7 @@ public class Main {
             userInput = scanner.nextLine();
             if (!checkIfInputInvalid(userInput)) {
                 amountTries--;
+                collectUsedChars(userInput);
                 System.out.println(compareInputWithSolution(userInput, generatedWord));
                 System.out.println("REMAINING TRIES: " + amountTries);
             }
@@ -61,5 +63,14 @@ public class Main {
 
     private static boolean checkIfInputIdentical(String userInput, String generatedWord) {
         return userInput.equals(generatedWord);
+    }
+
+    private static ArrayList<Character> collectUsedChars(String userInput) {
+        ArrayList<Character> usedChars = new ArrayList<Character>();
+        for (int i = 0; i < userInput.length(); i++) {
+            usedChars.add(userInput.charAt(i));
+        }
+
+        return usedChars;
     }
 }
