@@ -13,15 +13,16 @@ public class Main {
         System.out.println(generatedWord);
         Scanner scanner = new Scanner(System.in);
         String userInput;
-        int amountTries = 4;
+        int amountTries = 5;
         do {
             userInput = scanner.nextLine();
             if (!checkIfInputInvalid(userInput)) {
+                amountTries--;
                 System.out.println(compareInputWithSolution(userInput, generatedWord));
                 System.out.println("REMAINING TRIES: " + amountTries);
-                amountTries--;
             }
-        } while (!checkIfInputIdentical(userInput, generatedWord) || amountTries != 0);
+            System.out.println(userInput.equals(generatedWord));
+        } while (amountTries != 0);
     }
 
     private static String generateWord() {
@@ -50,6 +51,10 @@ public class Main {
             } else {
                 tempWord.append("❒ ");
             }
+        }
+        if (checkIfInputIdentical(userInput, generatedWord)) {
+            System.out.println("CORRECT WORD FOUND!");
+            System.exit(0);
         }
         return tempWord.toString();
     }
