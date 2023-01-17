@@ -11,18 +11,19 @@ public class Main {
     };
 
     public static void main(String[] args) {
-        String generatedWord = generateWord();
-        System.out.println(generatedWord);
-        Scanner scanner = new Scanner(System.in);
-        ArrayList<Character> usedChars = new ArrayList<Character>();
         String userInput;
+        String generatedWord = generateWord();
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder tempWord = new StringBuilder();
+        ArrayList<Character> usedChars = new ArrayList<Character>();
+        System.out.println(generatedWord);
         int amountTries = 5;
         do {
             userInput = scanner.nextLine();
             if (!checkIfInputInvalid(userInput)) {
                 amountTries--;
                 collectUsedChars(userInput, usedChars);
-                System.out.println(compareInputWithSolution(userInput, generatedWord));
+                compareInputWithSolution(userInput, generatedWord, tempWord);
                 System.out.println("REMAINING TRIES: " + amountTries);
             }
         } while (amountTries != 0);
@@ -46,20 +47,19 @@ public class Main {
         return false;
     }
 
-    private static String compareInputWithSolution(String userInput, String generatedWord) {
-        StringBuilder tempWord = new StringBuilder();
+    private static void compareInputWithSolution(String userInput, String generatedWord, StringBuilder tempWord) {
         for (int i = 0; i < generatedWord.length(); i++) {
-            if (userInput.charAt(i) == generatedWord.charAt(i)) {
-                tempWord.append(userInput.charAt(i)).append(" ");
-            } else {
-                tempWord.append("❒ ");
+            if (userInput.charAt(i) == generatedWord.charAt(i) && tempWord.length() < 5) {
+                tempWord.append(userInput.charAt(i));
+            } else if (userInput.charAt(i) != generatedWord.charAt(i) && tempWord.length() < 5) {
+                tempWord.append("❒");
             }
         }
         if (checkIfInputIdentical(userInput, generatedWord)) {
             System.out.println("CORRECT WORD FOUND!");
             System.exit(0);
         }
-        return tempWord.toString();
+        System.out.println(tempWord.toString());
     }
 
     private static boolean checkIfInputIdentical(String userInput, String generatedWord) {
