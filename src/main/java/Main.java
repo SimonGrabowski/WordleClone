@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -13,17 +14,17 @@ public class Main {
         String generatedWord = generateWord();
         System.out.println(generatedWord);
         Scanner scanner = new Scanner(System.in);
+        ArrayList<Character> usedChars = new ArrayList<Character>();
         String userInput;
         int amountTries = 5;
         do {
             userInput = scanner.nextLine();
             if (!checkIfInputInvalid(userInput)) {
                 amountTries--;
-                collectUsedChars(userInput);
+                collectUsedChars(userInput, usedChars);
                 System.out.println(compareInputWithSolution(userInput, generatedWord));
                 System.out.println("REMAINING TRIES: " + amountTries);
             }
-            System.out.println(userInput.equals(generatedWord));
         } while (amountTries != 0);
     }
 
@@ -65,12 +66,12 @@ public class Main {
         return userInput.equals(generatedWord);
     }
 
-    private static ArrayList<Character> collectUsedChars(String userInput) {
-        ArrayList<Character> usedChars = new ArrayList<Character>();
+    private static void collectUsedChars(String userInput, ArrayList<Character> usedChars) {
         for (int i = 0; i < userInput.length(); i++) {
-            usedChars.add(userInput.charAt(i));
+            if (!usedChars.contains(userInput.charAt(i))) {
+                usedChars.add(userInput.charAt(i));
+            }
         }
-
-        return usedChars;
+        System.out.println(usedChars.stream().sorted().collect(Collectors.toList()));
     }
 }
